@@ -158,24 +158,58 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
 } 
  
 
-/* @keyframes anim {
-    0% {background-image: url("../img/1.jpg"); }
-    25% {background-image: url("../img/2.jpg");}
-    75% {background-image: url("../img/3.jpg");}
-    100% {background-image: url("../img/1.jpg");}
-}
-.item{
-    width: 300px;
-    height: 200px;
-    background-image: url("../img/1.jpg");
+.welcome {
+    background-color: #00a4d3;
+    background-image: url("../img/welcome/bg.png");
+    color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation-name: anim;
-    animation-duration: 10s;
-    animation-delay: -4s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-} */
+}
 
+.gWelcome .top{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    font-size: 30px;
+    padding: 0;
+}
 
+.gWelcome h2{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.gWelcome {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+
+.text {
+    grid-column: 1 / span 5;
+}
+
+.picture {
+    grid-column: 6 / -1;
+}
+
+.gWelcome p {
+    padding-bottom: 25px;
+}
+
+.RM {
+    background-color: white;
+    color: #00a4d3;
+    padding: 19px 35px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
