@@ -196,7 +196,7 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
     grid-column: 1 / span 5;
 }
 
-.picture {
+.pictureWelcome {
     grid-column: 6 / -1;
 }
 
@@ -213,3 +213,40 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
+
+.coursesTable {
+    background-color: white;
+    color: black;
+}
+
+.topGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+}
+
+.topGrid h2 {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    margin-bottom: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #00a4d3;
+    gap: 0;
+}
+
+.topGrid p {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.topGrid img {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+} 
