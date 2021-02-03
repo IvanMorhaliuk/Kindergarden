@@ -12,6 +12,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    --mainColor: #00a4d3;
 }
 
 .container{max-width: 100%;}
@@ -23,7 +24,7 @@ body{
 
 section{padding-top: 60px;padding-bottom: 60px;}
 @media (max-width: 576px){ section{padding: 40px;}}
-header{background-color: #00a4d3; padding: 35px 0px;}
+header{background-color: var(--mainColor); padding: 35px 0px;}
 header .gHeader{
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -59,7 +60,7 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
 .main{
     padding: 140px 0px 120px 0px;
     background-image: url("../img/main/bg.png");
-    background-color: #00a4d3;
+    background-color: var(--mainColor);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -74,7 +75,7 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
     display: grid;
     grid-column: 7/-1;
     font-family: 'Dosis', sans-serif;
-    color: #00a4d3;
+    color: var(--mainColor);
 }
 .gMain .heading h1{
     font-size: 72px;
@@ -142,7 +143,7 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
     appearance: none;
     width: 15px;
     height: 15px;
-    border: 2px solid #00a4d3;
+    border: 2px solid var(--mainColor);
     border-radius: 50%;
     cursor: pointer;
     
@@ -151,7 +152,7 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
 #slide2{right: 367px;}
 #slide3{right: 342px;}
 
-.gMain .wrap input:checked,input:active,input:hover{outline: none; background-color: #00a4d3 ;}
+.gMain .wrap input:checked,input:active,input:hover{outline: none; background-color: var(--mainColor) ;}
 
 #slide1:checked ~ .gSlideshow .item{background-image: url("../img/1.jpg");}
 #slide2:checked ~ .gSlideshow .item{background-image: url("../img/2.jpg");}
@@ -159,7 +160,7 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
 
 
 .welcome {
-    background-color: #00a4d3;
+    background-color: var(--mainColor);
     background-image: url("../img/welcome/bg.png");
     color: white;
     background-repeat: no-repeat;
@@ -219,7 +220,7 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
 
 .RM {
     background-color: white;
-    color: #00a4d3;
+    color: var(--mainColor);
     padding: 16px 36px;
     border-radius: 15px;
     text-transform: uppercase;
@@ -238,7 +239,7 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
     font-weight: 700;
     font-size: 36px;
     text-transform: uppercase;
-    color: #00a4d3;
+    color: var(--mainColor);
     letter-spacing: 1.5px;
     margin: 0;
 }
@@ -315,7 +316,7 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
 }
 .coursesTable .gCards a{
     text-transform: uppercase;
-    color: #00a4d3;
+    color: var(--mainColor);
     font-weight: 500;
     letter-spacing: 1.8px;
 }
