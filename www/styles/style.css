@@ -58,7 +58,9 @@ header nav a{ color: white; }
 header nav a:hover,a:active{ font-family: RobotoBlack; }
 
 .main{
-    padding: 140px 0px 120px 0px;
+    padding-top: 140px;
+    padding-bottom: 120px;
+    
     background-image: url("../img/main/bg.png");
     background-color: var(--mainColor);
     background-repeat: no-repeat;
@@ -102,6 +104,10 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
     left: -134px;
     
 }
+@media (max-width: 992px){
+    .gMain .wrap{grid-column: 1/-1; left: 0;border:none}
+    .gMain .heading{grid-column: 1/-1;}
+}
 .gMain .wrap:after {
     content: " ";
     position: absolute;
@@ -134,11 +140,17 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
     background-position: left;
     transition: all 0.5s linear;
 }
+@media (max-width: 992px){
+    .gMain .item{width: unset;}
+    .gMain .gSlideshow{position: relative; left: 50%; transform: translateX(-50%); grid-template-columns: 1fr;}
+    .gMain .wrap::after{content: '';border:none}
+}
 
 .gMain .wrap input{
     position: absolute;
     z-index: 2;
-    right: 390px;
+    left: 39%;
+    margin-right: 3px;
     bottom: 15px;
     appearance: none;
     width: 15px;
@@ -149,9 +161,14 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
     
 }
 
-#slide2{right: 367px;}
-#slide3{right: 342px;}
-
+#slide2{left:43%;}
+#slide3{left: 47%;}
+@media (max-width: 992px){
+    #slide1{left: 46%;}
+    #slide2{left:50%}
+    #slide3{left: 54%;}
+    .gMain .wrap input{transform: translateX(-50%);}
+}
 .gMain .wrap input:checked,input:active,input:hover{outline: none; background-color: var(--mainColor) ;}
 
 #slide1:checked ~ .gSlideshow .item{background-image: url("../img/1.jpg");}
