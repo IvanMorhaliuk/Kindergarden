@@ -360,7 +360,10 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
     grid-template-rows: 60% 30%;
 }
 
-.schoolPic { grid-row: 1/2; align-items: center;}
+.gSchool figure img { 
+    padding-bottom: 40px;
+    grid-row: 1/2;
+}
 .gSchool figcaption { grid-row: 2;}
 
 .gSchool h2 {
@@ -413,6 +416,40 @@ header nav a:hover,a:active{ font-family: RobotoBlack; }
     text-align: center;
 }
 
+@media (max-width: 1202px) {
+    .gSchool figure {
+        grid-column: 1/-1;
+    }
+    .gSchool figure img { 
+        padding-left: 30%;
+    }
+    .gSchool .gTable {
+        padding: 50px 200px;
+        grid-column: 1/-1;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .gSchool .gTable div {
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 992px)
+{
+    .gTable {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 33px;
+    }
+    .gTable div:nth-child(1) { grid-row: 1/2; grid-column: 1/2;}
+    .gTable div:nth-child(2) { grid-row: 1/2; grid-column: 2/3;}
+    .gTable div:nth-child(3) { grid-row: 1/2; grid-column: 3/4;}
+    .gTable div:nth-child(4) { grid-row: 2/-1; grid-column: 1/2;}
+    .gTable div:nth-child(5) { grid-row: 2/-1; grid-column: 2/3;}
+    .gTable div:nth-child(6) { grid-row: 2/-1; grid-column: 3/4;}
+
+}
 
 
 
