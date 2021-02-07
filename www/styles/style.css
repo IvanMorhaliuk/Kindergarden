@@ -576,16 +576,19 @@ footer{
     background-image: url("../img/footer/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 275px;
+    padding-top: 310px;
     padding-bottom: 270px;
     text-transform: uppercase;
     background-position: center;
 }
 @media (max-width: 768px){
     footer{
-        padding-top: 600px
+        padding-top: 300px;
+        text-align: center;
+        
     }
 }
+
 footer h4,p {margin: 0;}
 
 footer .container>a,footer .info h4,footer .info .address .contact span{
@@ -602,7 +605,9 @@ footer .info{
     grid-auto-flow: column;
     grid-template-columns: repeat(12,1fr);
 }
-
+@media(max-width: 768px){
+    footer .info {padding-top: 50px;}
+}
 footer .info h4,footer .info .address .contact span{font-weight: 700;}
 footer .info .address{
     grid-column: 1/5;
