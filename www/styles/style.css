@@ -173,7 +173,7 @@ header nav a:hover, a:active{ font-family: RobotoBlack; }
 .gMain .item{
     width: 651px;
     height: 546px;
-    background-image: url("../img/1.jpg");
+    background-image: url("../img/slider/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -214,9 +214,9 @@ header nav a:hover, a:active{ font-family: RobotoBlack; }
 }
 .gMain .wrap input:checked,input:active,input:hover{outline: none; background-color: var(--mainColor) ;}
 
-#slide1:checked ~ .gSlideshow .item{background-image: url("../img/1.jpg");}
-#slide2:checked ~ .gSlideshow .item{background-image: url("../img/2.jpg");}
-#slide3:checked ~ .gSlideshow .item{background-image: url("../img/3.jpg");}
+#slide1:checked ~ .gSlideshow .item{background-image: url("../img/slider/1.jpg");}
+#slide2:checked ~ .gSlideshow .item{background-image: url("../img/slider/2.jpg");}
+#slide3:checked ~ .gSlideshow .item{background-image: url("../img/slider/3.jpg");}
 
 
 .welcome {
@@ -775,4 +775,67 @@ footer .addInf .logo{
     footer .addInf .copy{ grid-column: 1/-1; grid-row: 2/-1; text-align: center;   }
     
     
+}
+
+
+.about {
+    padding-top: 140px;
+    padding-bottom: 120px;
+    
+    background-image: url("../img/main/bg.png");
+    background-color: var(--mainColor);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gAbout {
+    font-family: 'Dosis', sans-serif;
+    color: var(--mainColor);
+}
+
+.teatr {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.gAbout .teatr img {
+    border-radius: 30px;
+    grid-column: 1/2;
+}
+
+.gAbout .teatr p {
+    grid-column: 2/3;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.garden {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.gAbout .garden img {
+    border-radius: 30px;
+    grid-column: 2/3;
+}
+
+.gAbout p {
+    grid-column: 1/2;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 0.5px;
 }
