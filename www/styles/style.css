@@ -212,6 +212,11 @@ header nav a:hover, a:active{ font-family: RobotoBlack; }
     #slide3{left: 54%;}
     .gMain .wrap input{-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);}
 }
+@media (max-width: 576px){
+    #slide1{left: 42%;}
+    #slide2{left:50%}
+    #slide3{left: 58%;}
+}
 .gMain .wrap input:checked,input:active,input:hover{outline: none; background-color: var(--mainColor) ;}
 
 #slide1:checked ~ .gSlideshow .item{background-image: url("../img/slider/1.jpg");}
