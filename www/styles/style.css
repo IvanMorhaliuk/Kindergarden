@@ -116,7 +116,15 @@ header nav a:hover, a:active{ font-family: RobotoBlack; }
     font-size: 48px;
     font-weight: 500;
 }
-@media (max-width: 768px){.gMain .heading h1{font-size: 42px;}}
+@media (max-width: 767px){
+    .gMain .heading{margin-left: auto; margin-right: auto;}
+    .gMain .heading h1{font-size: 42px; margin-left: auto; margin-right: auto;}
+    .gMain .heading h2{font-size: 40px; margin-left: auto; margin-right: auto;}
+}
+@media (max-width: 576px){
+    .gMain .heading h1{font-size: 35px;}
+    .gMain .heading h2{font-size: 30px;}
+}
 
 
 .gMain .wrap{
@@ -326,17 +334,32 @@ header nav a:hover, a:active{ font-family: RobotoBlack; }
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(12,1fr);
+    padding-top: 80px;
+}
+.coursesTable .gCards2{
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(12,1fr);
+    padding-top: 80px;
 }
 .coursesTable .gCards figure:nth-child(1){-ms-grid-column: 1;-ms-grid-column-span: 3;grid-column: 1/4;}
 .coursesTable .gCards figure:nth-child(2){-ms-grid-column: 4;-ms-grid-column-span: 3;grid-column: 4/7;}
 .coursesTable .gCards figure:nth-child(3){-ms-grid-column: 7;-ms-grid-column-span: 3;grid-column: 7/10;}
 .coursesTable .gCards figure:nth-child(4){grid-column: 10/-1;}
 
+.coursesTable .gCards2 figure:nth-child(1){-ms-grid-column: 1;-ms-grid-column-span: 3;grid-column: 1/4;}
+.coursesTable .gCards2 figure:nth-child(2){-ms-grid-column: 4;-ms-grid-column-span: 3;grid-column: 4/7;}
+.coursesTable .gCards2 figure:nth-child(3){-ms-grid-column: 7;-ms-grid-column-span: 3;grid-column: 7/10;}
+.coursesTable .gCards2 figure:nth-child(4){grid-column: 10/-1;}
+
 
 @media (max-width: 992px){
     .coursesTable .container > p {width: 100%;}
     .coursesTable .gCards figure:nth-child(odd){-ms-grid-column: 1;-ms-grid-column-span: 6;grid-column: 1/7;}
     .coursesTable .gCards figure:nth-child(even){grid-column: 7/-1;}
+    .coursesTable .gCards2 figure:nth-child(odd){-ms-grid-column: 1;-ms-grid-column-span: 6;grid-column: 1/7;}
+    .coursesTable .gCards2 figure:nth-child(even){grid-column: 7/-1;}
 }
 @media (max-width: 768px){
     .coursesTable .gCards figure:nth-child(1){grid-column: 1/-1;}
@@ -344,8 +367,19 @@ header nav a:hover, a:active{ font-family: RobotoBlack; }
     .coursesTable .gCards figure:nth-child(3){grid-column: 1/-1; -ms-grid-row: 2; -ms-grid-row-span: 1; grid-row: 2/3;}
     .coursesTable .gCards figure:nth-child(4){grid-column: 1/-1;}
     .coursesTable .gCards{gap:10px}
+    .coursesTable .gCards2 figure:nth-child(1){grid-column: 1/-1;}
+    .coursesTable .gCards2 figure:nth-child(2){grid-column: 1/-1;}
+    .coursesTable .gCards2 figure:nth-child(3){grid-column: 1/-1; -ms-grid-row: 2; -ms-grid-row-span: 1; grid-row: 2/3;}
+    .coursesTable .gCards2 figure:nth-child(4){grid-column: 1/-1;}
+    .coursesTable .gCards2{gap:10px}
 }
 .coursesTable .gCards figure{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.coursesTable .gCards2 figure{
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr 1fr;
@@ -355,17 +389,34 @@ header nav a:hover, a:active{ font-family: RobotoBlack; }
     background-repeat: no-repeat;
     background-size: cover;
 }
+.coursesTable .gCards2 .pic{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .coursesTable .gCards .t1{background-image: url("../img/courses/1.jpg");}
 .coursesTable .gCards .t2{background-image: url("../img/courses/2.jpg");}
 .coursesTable .gCards .t3{background-image: url("../img/courses/3.jpg");}
 .coursesTable .gCards .t4{background-image: url("../img/courses/4.jpg");}
+.coursesTable .gCards2 .t1{background-image: url("../img/courses/5.jpg");}
+.coursesTable .gCards2 .t2{background-image: url("../img/courses/6.jpg");}
+.coursesTable .gCards2 .t3{background-image: url("../img/courses/7.jpg");}
+.coursesTable .gCards2 .t4{background-image: url("../img/courses/8.jpg");}
+
 
 .coursesTable .gCards figure .pic:nth-child(odd){border-radius: 30px 30px 0px 0px;}
 .coursesTable .gCards figure .pic:nth-child(even){border-radius: 0px 0px 30px 30px;}
 .coursesTable .gCards figure figcaption:nth-child(odd){border-radius: 30px 30px 0px 0px;}
 .coursesTable .gCards figure figcaption:nth-child(even){border-radius: 0px 0px 30px 30px;}
+.coursesTable .gCards2 figure .pic:nth-child(odd){border-radius: 30px 30px 0px 0px;}
+.coursesTable .gCards2 figure .pic:nth-child(even){border-radius: 0px 0px 30px 30px;}
+.coursesTable .gCards2 figure figcaption:nth-child(odd){border-radius: 30px 30px 0px 0px;}
+.coursesTable .gCards2 figure figcaption:nth-child(even){border-radius: 0px 0px 30px 30px;}
 
 .coursesTable .gCards figcaption{
+    padding: 44px 34px;
+    background-color: #fafafa ;
+}
+.coursesTable .gCards2 figcaption{
     padding: 44px 34px;
     background-color: #fafafa ;
 }
@@ -373,11 +424,25 @@ header nav a:hover, a:active{ font-family: RobotoBlack; }
     font-weight: 500;
     letter-spacing: 0.5px;
 }
+.coursesTable .gCards2 span{
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
 .coursesTable .gCards span::before{
     content: "\2709";
     margin-right: 2px;
 }
+.coursesTable .gCards2 span::before{
+    content: "\2709";
+    margin-right: 2px;
+}
 .coursesTable .gCards h3{
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.coursesTable .gCards2 h3{
     font-family: 'Roboto Slab', serif;
     font-size: 24px;
     font-weight: 400;
@@ -389,134 +454,25 @@ header nav a:hover, a:active{ font-family: RobotoBlack; }
     letter-spacing: 0.8px;
     margin-bottom: 32px;
 }
+.coursesTable .gCards2 p{
+    color: #aaaaaa;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    margin-bottom: 32px;
+}
 .coursesTable .gCards a{
     text-transform: uppercase;
     color: var(--mainColor);
     font-weight: 500;
     letter-spacing: 1.8px;
 }
-
-.schoolFac {
-    background-color: var(--mainColor);
-    background-image: url("../img/schoolFacilities/bg.png");
-    color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 0;
-    padding-top: 120px;
-}
-
-.gSchool {
-    display: -ms-grid;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(12,1fr);
-}
-
-.gSchool > figure {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1/5;
-}
-
-.gSchool figure img { 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 40px;
-}
-
-.gSchool h2 {
-    font-family: 'Dosis', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    padding-bottom: 34px;
-    margin: 0;
-    letter-spacing: 1.5px;
-}
-
-.gTable {
-    padding-bottom: 136px;
-    padding-top: 133px;
-    grid-column: 7/-1; 
-    display: -ms-grid; 
-    display: grid;
-    -ms-grid-columns: 1fr 33px 1fr 33px 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 33px;
-}
-
-.gTable div:nth-child(1) {-ms-grid-column: 1;-ms-grid-column-span: 1;grid-column: 1/2;}
-.gTable div:nth-child(2) {-ms-grid-column: 2;-ms-grid-column-span: 1;grid-column: 2/3;}
-.gTable div:nth-child(3) {-ms-grid-column: 3;-ms-grid-column-span: 1;grid-column: 3/4;}
-.gTable div:nth-child(4) {-ms-grid-column: 1;-ms-grid-column-span: 1;grid-column: 1/2;}
-.gTable div:nth-child(5) {-ms-grid-column: 2;-ms-grid-column-span: 1;grid-column: 2/3;}
-.gTable div:nth-child(6) {-ms-grid-column: 3;-ms-grid-column-span: 1;grid-column: 3/4;}
-
-.gTable div {
-    background-color: white;
-    border-radius: 20px;
-    width: 155px;
-    height: 155px;
-}
-
-.gTable div img {
-    padding-top: 43px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.gTable div span {
-    display: block;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 47px;
-    font-weight: 400;
-    font-size: 16px;
+.coursesTable .gCards2 a{
+    text-transform: uppercase;
     color: var(--mainColor);
+    font-weight: 500;
+    letter-spacing: 1.8px;
 }
 
-@media (max-width: 1102px) {
-    .gSchool figure {
-        grid-column: 1/-1;
-    }
-
-    .gSchool .gTable {
-        padding: 50px 205px;
-        grid-column: 1/-1;
-    }
-}
-
-@media (max-width: 992px)
-{
-    .gSchool .gTable {padding: 50px 100px;}
-}
-
-@media (max-width: 768px)
-{
-    .gSchool .gTable {padding: 50px 0;}
-}
-
-@media (max-width: 580px)
-{
-    .gSchool .gTable {
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    }
-    .gTable div:nth-child(odd) {-ms-grid-column: 1;-ms-grid-column-span: 1;grid-column: 1/2; margin-left: auto;}
-    .gTable div:nth-child(even) {-ms-grid-column: 2;-ms-grid-column-span: 1;grid-column: 2/3; margin-right: auto;}
-}
-
-@media (max-width: 410px)
-{
-    .gTable div:nth-child(odd) {grid-column: 1/-1; margin: auto;}
-    .gTable div:nth-child(even) {grid-column: 1/-1; margin: auto;}
-}
 
 
 .teachers {
@@ -622,7 +578,7 @@ footer{
     background-size: cover;
     padding-top: 310px;
     padding-bottom: 270px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     background-position: center;
 }
 
