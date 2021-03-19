@@ -49,16 +49,24 @@
     
     <section class="main" id="main">
         <div class="container gMain">
-            <div class="wrap">
-                <input type="radio" name="point" id="slide1">
-                <input type="radio" name="point" id="slide2"checked>
-                <input type="radio" name="point" id="slide3">
-                <div class="gSlideshow">
-                    <div class="item"></div>
+            <div class="borderBottom">
+                <div class="wrap">
+                    <div class="slideshow">
+                        <img id="slideshow" src="./img/slider/2.jpg" alt="">
+                    </div>
+                    <!--/.gSlideshow -->
                 </div>
-                <!--/.gSlideshow -->
+                <!-- /.wrap -->
+                <div class="buttons">
+                    <input type="radio" name="sButton" id="slide1" >
+                    <input type="radio" name="sButton" id="slide2" checked>
+                    <input type="radio" name="sButton" id="slide3">
+                </div>
+                <!-- /.buttons -->
             </div>
-            <!-- /.wrap -->
+            <!-- /.borderBottom -->
+
+
             <div class="heading">
                 <h1>Играем.  Учимся.  Растём.</h1>
                 <h2>Детский клуб "Фантазёры"</h2>
@@ -234,5 +242,22 @@
         </div>
         <!-- /.container -->
     </footer>
+
+
+    <script>
+        var slideShowImg = document.getElementById("slideshow");
+        var radios = document.getElementsByTagName("input");
+        radios[0].onclick = function(){
+            slideShowImg.src = "./img/slider/1.jpg";
+        }
+        radios[1].onclick = function(){
+            slideShowImg.src = "./img/slider/2.jpg";
+        }
+        
+        radios[2].onclick = function(){
+            slideShowImg.src = "./img/slider/3.jpg";
+        }
+        
+    </script>
 </body>
 </html>
