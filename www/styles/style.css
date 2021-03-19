@@ -659,7 +659,6 @@ footer{
     background-size: cover;
     padding-top: 310px;
     padding-bottom: 270px;
-    /* text-transform: uppercase; */
     background-position: center;
 }
 
@@ -730,7 +729,6 @@ footer .info .fa:hover{
     
 }
 
-
 footer .info  p{
     color: #333333;
     line-height: 26px;
@@ -744,6 +742,7 @@ footer .info .address>p span{display: -ms-grid;display: grid;}
     footer .info .address{grid-column: 1/-1;}
     footer .info .contact{grid-column: 1/-1; text-align: center;}
     footer .info .fa {grid-column: 1/-1; text-align: center; margin-left: auto; margin-right: auto;}
+    footer .info .in {grid-column: 1/-1; text-align: center; margin-left: auto; margin-right: auto;}
 }
 
 
